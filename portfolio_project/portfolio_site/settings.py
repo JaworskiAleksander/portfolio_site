@@ -120,4 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# when someone wants to upload their stuff ...
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+# when someone wants to access some media ...
+MEDIA_URL = '/media/'
