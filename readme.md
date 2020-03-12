@@ -4,5 +4,5 @@
     ```bash
     pip3 install virtualenv     # install virtual environment plugin
     virtualenv my_venv          # create virtual env for this project
-    source v_env/bin/activate   # activate your newly found god powers!
+    source my_venv/bin/activate   # activate your newly found god powers!
     ```
