@@ -6,3 +6,7 @@
     virtualenv my_venv          # create virtual env for this project
     source my_venv/bin/activate   # activate your newly found god powers!
     ```
++ install all we need
+
++ migrations should be included in your project ... makes sense
+    https://stackoverflow.com/questions/28035119/should-i-be-adding-the-django-migration-files-in-the-gitignore-file
