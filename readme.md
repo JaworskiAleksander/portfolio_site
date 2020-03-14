@@ -14,11 +14,28 @@
 + postgres DB running under the hood
 
 //
-In main folder, perform this command
+### Setting up virtual environment
 ```bash
     virtualenv -p /usr/bin/python3 portfolio_env
     source /portfolio_env/bin/activate
     pip3 install psycopg2
     pip3 install Django
     pip3 install pillow
+```
+
+### setting up postgresql
+```bash
+    sudo apt-get update
+    sudo apt-get install postgresql
+    sudo -u postgresql psql
+```
+Once logged in psql shell, type this
+```psql
+    /password postgres
+    <your_migthy_password>
+    # create a database for each new project you make
+    # or just use containers and set volumes accordingly -v "$(pwd)/project/data:/var/lib/postgres/data"
+    # and don't forget to add this in volume: section too!
+
+    CREATE DATABASE portfoliodb;
 ```
