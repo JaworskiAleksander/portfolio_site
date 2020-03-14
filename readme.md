@@ -10,3 +10,15 @@
 
 + migrations should be included in your project ... makes sense
     https://stackoverflow.com/questions/28035119/should-i-be-adding-the-django-migration-files-in-the-gitignore-file
+
++ postgres DB running under the hood
+
+//
+In main folder, perform this command
+```bash
+    virtualenv -p /usr/bin/python3 portfolio_env
+    source /portfolio_env/bin/activate
+    pip3 install psycopg2
+    pip3 install Django
+    pip3 install pillow
+```
