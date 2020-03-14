@@ -50,3 +50,9 @@ Once logged in psql shell, type this
 
 ### creating superuser
 `python3 manage.py createsuperuser`
+
+### Working with models
++ create model class
++ register model in settings.
++ migrate all data into postgresql
++ add to the admin page
