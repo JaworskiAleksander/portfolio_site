@@ -87,7 +87,7 @@
 
       {% for blog in blogs.all %}
       <div class="jumbotron">
-        <a href="" class="anchor_reset">
+        <a href="{% url 'blog:detail' blog_id=blog.id %}" class="anchor_reset">
           <h4><img src="{{ blog.image.url }}" alt="" class='blog_image'> {{ blog.title }}</h4>@{{ blog.pub_date_pretty }}
           <hr>
           <p>{{ blog.summary }}...</p>
