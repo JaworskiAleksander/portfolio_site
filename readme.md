@@ -56,3 +56,9 @@ Once logged in psql shell, type this
 + register model in settings.
 + migrate all data into postgresql
 + add to the admin page
+
+### Extra work
++ add url field to jobs model
+    + store link to github source code
++ migrate changes
++ inject that code into 'Code' button attached to every project card

@@ -58,7 +58,7 @@
                     <img src="/media/images/GitHub_Logo_White.png" alt="" height="24">
                 </a>
                 <a class="nav-item nav-link" href="#">Resumee</a>
-                <a class="nav-item nav-link" href="{% url 'blog:allblogs' %}">Blog</a>
+                <a class="nav-item nav-link" href="#">Blog</a>
               </div>
             </div>
         </nav>
@@ -68,9 +68,8 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Hi, I'm Aleksander</h1>
-      <p class="lead text-muted">Hey, my name is Aleksander and I'm a self-taught web developer.</p>
-      <p class="text-muted">I enjoy making Django websites, expanding knowledge about CI/CD, containers, and learning network stuff like CCNA 200-301</p>
+      <h1>Blog site!</h1>
+      <p class="lead text-muted">my name is Aleksander and I'm a self-taught web developer.</p>
       <p>Python / Django / docker / git / CCNA 200-301</p>
       <p>
         <a href="mailto:aleck156@gmail.com" class="btn btn-primary my-2">Email Me</a>
@@ -82,7 +81,6 @@
     <div class="container">
 
       <div class="row">
-
         {% for job in jobs.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
@@ -91,7 +89,7 @@
               <p class="card-text">{{ job.summary }}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
                 </div>
               </div>
@@ -99,7 +97,6 @@
           </div>
         </div>
         {% endfor %}
-        
       </div>
     </div>
   </div>
