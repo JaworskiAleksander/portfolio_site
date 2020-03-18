@@ -40,6 +40,12 @@
           font-size: 3.5rem;
         }
       }
+
+      #admin_logo{
+        width: 32px;
+        height: 32px;
+        filter: invert(100%);
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
@@ -59,6 +65,7 @@
                 </a>
                 <a class="nav-item nav-link" href="#">Resumee</a>
                 <a class="nav-item nav-link" href="{% url 'blog:allblogs' %}">Blog</a>
+                <a class="nav-item nav-link" href="{% url 'admin:index' %}"><img src="/media/images/admin_logo.png" alt="" id="admin_logo"></a>
               </div>
             </div>
         </nav>
@@ -99,7 +106,7 @@
           </div>
         </div>
         {% endfor %}
-        
+
       </div>
     </div>
   </div>
