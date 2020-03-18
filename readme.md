@@ -60,5 +60,11 @@ Once logged in psql shell, type this
 ### Extra work
 + add url field to jobs model
     + store link to github source code
+    + store link to live version, hosted at heroku or whathaveyou
++ inject those links into base.html page, so it gets automatically taken from postgres
 + migrate changes
 + inject that code into 'Code' button attached to every project card
+
++ encapsulate navbar, footer and everything that repeats into portfolio_site templates folder
+    + DRY - you should *NEVER* have the same piece of code in two places!
+    + use tags to inject a specific - jobs/blog - links in navbar
