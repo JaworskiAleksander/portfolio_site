@@ -129,3 +129,13 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # when someone wants to access some media ...
 MEDIA_URL = '/media/'
+
+
+# in order to add static content that'll be available to every app in project
+# you have to create STATIC_ROOT first
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'portfolio/')
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_URL = '/static/'
