@@ -1,4 +1,4 @@
-
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -68,7 +68,7 @@
                 <a class="nav-item nav-link" href="https://github.com/JaworskiAleksander">
                     <img src="/media/images/GitHub_Logo_White.png" alt="" height="24">
                 </a>
-                <a class="nav-item nav-link" href="#">Resumee</a>
+                <a class="nav-item nav-link" href="{% static 'static/resumee.pdf' %}">Resumee</a>
                 <a class="nav-item nav-link" href="{% url 'home' %}">Projects</a>
               </div>
             </div>
@@ -90,7 +90,7 @@
         <a href="{% url 'blog:detail' blog_id=blog.id %}" class="anchor_reset">
           <h4><img src="{{ blog.image.url }}" alt="" class='blog_image'> {{ blog.title }}</h4>@{{ blog.pub_date_pretty }}
           <hr>
-          <p>{{ blog.summary }} ...</p>
+          <p>{{ blog.summary }}...</p>
         </a>
       </div>
       {% endfor %}
