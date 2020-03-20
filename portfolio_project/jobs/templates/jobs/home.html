@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Album example · Bootstrap</title>
+    <title>Aleksander Jaworski</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -21,7 +21,6 @@
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
 <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
 <meta name="theme-color" content="#563d7c">
 
@@ -51,6 +50,11 @@
       #github_logo{
         height: 28px;
       }
+
+      #main_pic{
+        width: 128px;
+        height: 100%;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
@@ -58,7 +62,7 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Aleksander Jaworski</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Aleksander Jaworski</a>
             <!-- this part of code is here for a reason, do not touch it -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -89,6 +93,7 @@
       <p>
         <a href="mailto:aleck156@gmail.com" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img src="{% static 'static/MAIN.jpeg' %}" id='main_pic'>
     </div>
   </section>
 
