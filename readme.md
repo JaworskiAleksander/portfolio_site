@@ -58,6 +58,8 @@ Once logged in psql shell, type this
 + add to the admin page
 
 ### Extra work
++ to merge all static files into one folder within a project, run this:
+    + `python manage.py collectstatic`
 + add url field to jobs model
     + store link to github source code
     + store link to live version, hosted at heroku or whathaveyou
