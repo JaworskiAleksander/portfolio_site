@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Album example · Bootstrap</title>
+    <title>Personal Blog</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -51,28 +51,46 @@
         color: black;
         cursor: pointer;
       }
+
+      #admin_logo{
+        width: 32px;
+        height: 32px;
+        filter: invert(100%);
+      }
+
+      #github_logo{
+        height: 28px;
+      }
+
+      #main_pic{
+        width: 128px;
+        height: 100%;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Aleksander Jaworski</a>
-            <!-- this part of code is here for a reason, do not touch it -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="https://github.com/JaworskiAleksander">
-                    <img src="/media/images/GitHub_Logo_White.png" alt="" height="24">
-                </a>
-                <a class="nav-item nav-link" href="{% static 'static/resumee.pdf' %}">Resumee</a>
-                <a class="nav-item nav-link" href="{% url 'home' %}">Projects</a>
-              </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'home' %}">Aleksander Jaworski</a>
+        <!-- this part of code is here for a reason, do not touch it -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="https://github.com/JaworskiAleksander">
+                <img src="/media/images/GitHub_Logo_White.png" alt="" id='github_logo'>
+            </a>
+            <a class="nav-item nav-link" href="{% static 'static/resumee.pdf' %}">Resumee</a>
+            <a class="nav-item nav-link" href="{% url 'home' %}">Projects</a>
+            <a class="nav-item nav-link" href="{% url 'admin:index' %}">
+              <img src="/media/images/admin_logo.png" alt="" id="admin_logo">
+            </a>
+          </div>
+        </div>
+    </nav>
     </header>
 
 <main role="main">
