@@ -143,8 +143,5 @@ STATIC_URL = '/static/'
 try:
     from local_settings import *
 except ImportError:
-    pass
-else:
-    pass
-finally:
+    print('ImportError occured')
     pass
