@@ -111,6 +111,8 @@
         <div class="col">
           <div class="lead text-muted">
             Would you like to enter initial configuration dialogue? [yes/no]:
+            <a href="" class="btn btn-outline-dark">yes</a>
+            <a href="" class="btn btn-outline-dark">no</a>
           </div>
         </div>
       </div>
@@ -119,9 +121,7 @@
 
   <div class="album py-5 bg-light">
     <div class="container">
-
       <div class="row">
-
         {% for job in jobs.all %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
@@ -142,7 +142,6 @@
           </div>
         </div>
         {% endfor %}
-
       </div>
     </div>
   </div>
