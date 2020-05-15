@@ -53,7 +53,6 @@
 
       #main_pic{
         width: 128px;
-        height: 100%;
       }
 
       #main-text {
@@ -91,17 +90,23 @@
 
   <section class="jumbotron text-center">
     <div class="container">
-      <h1>Welcome to my personal website</h1>
-      <p class="lead text-muted">
-        Converting 1,3,7-trimethylxanthin into SOLID code since Win 3.11. 
-      </p>
-      <p class="text-left" id="main-text">
-        With passion, grinding code and coffee using git, docker, VS Code and AeroPress to suit the needs, wishes and desires of my customers.
-        Two scoops of Django, one tbsp of coffee beans and a Bootstrap are what starts my day on high note.
-        Afternoons are for reading, overflowing stacks, and listening to my favorite rock band - RTFM.
-        Evenings are for code cleaning, refactoring and commiting to repo's.
-      </p>
-      <img src="{% static 'static/MAIN.jpeg' %}" id='main_pic'>      
+      <div class="row">
+        <div class="col-2">
+          <img src="{% static 'static/MAIN.jpeg' %}" id='main_pic'>
+        </div>
+        <div class="col-10">
+          <h1>Welcome to my personal website</h1>
+          <p class="lead text-muted">
+            Converting 1,3,7-trimethylxanthin into SOLID code since Win 3.11. 
+          </p>
+          <p class="text-left" id="main-text">
+            With passion, grinding code and coffee using git, docker, VS Code and AeroPress to suit the needs, wishes and desires of my customers.
+            Two scoops of Django, one tbsp of coffee beans and a Bootstrap are what starts my day on high note.
+            Afternoons are for reading, overflowing stacks, and listening to my favorite rock band - RTFM.
+            Evenings are for code cleaning, refactoring and commiting to repo's.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
