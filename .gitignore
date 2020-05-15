@@ -95,6 +95,7 @@ env.bak/
 venv.bak/
 my_venv/
 portfolio_env/
+myvenv/
 
 # Spyder project settings
 .spyderproject
