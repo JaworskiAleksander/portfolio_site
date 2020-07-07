@@ -14,4 +14,4 @@ class Job(models.Model):
         return self.summary
     
     def short(self):
-        return self.summary[:50]
+        return self.summary + "testing"
