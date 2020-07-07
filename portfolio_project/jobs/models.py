@@ -13,5 +13,3 @@ class Job(models.Model):
     def __str__(self):
         return self.summary
     
-    def short(self):
-        return self.summary[:30]
