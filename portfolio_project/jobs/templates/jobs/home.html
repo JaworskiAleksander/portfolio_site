@@ -66,7 +66,7 @@
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 d-flex flex-column align-items-left">
+          <div class="col-md-2 d-flex flex-column align-items-left">
             <button 
               class="btn btn-secondary btn-navbar"
               onclick="window.alert('My contact info is in my Resumee.');">
@@ -97,6 +97,17 @@
               </button>
             </a>
           </div>
+
+          <!-- <div class="col-md-9">
+            {% for job in jobs.all %}
+
+            {% endfor %}
+            buidl your own flashcard to display projects
+              + picture
+              + job.summary
+              + link to live version
+              + link to github code
+          </div> -->
 
           {% for job in jobs.all %}
           <div class="col-md-3">
