@@ -11,7 +11,4 @@ class Job(models.Model):
     code_source_link = models.URLField(null=True, blank=True, default='', max_length=250)
 
     def __str__(self):
-        return self.summary
-    
-    def short(self):
-        return self.summary[:30]
+        return self.summary[:10]
