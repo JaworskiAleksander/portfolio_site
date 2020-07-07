@@ -1,176 +1,138 @@
 
-<!doctype html>
-<html lang="en">
-{% load static %}
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.6">
-    <title>Aleksander Jaworski</title>
+  <!doctype html>
+  <html lang="en">
+  {% load static %}
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v3.8.6">
+      <title>Aleksander Jaworski</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
+      <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">
 
+      <!-- Custom styles for this template -->
+      <link href="{% static 'static/album.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <main role="main">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-      .navbar_icons{
-        width: 32px;
-        height: 32px;
-        filter: invert(100%);
-      }
-
-      #main_pic{
-        width: 128px;
-      }
-
-      #main-text {
-        text-indent: 30px;
-      }
-
-      #navbar_main_jpeg{
-        height: 32px;
-        max-height: 100%;
-        max-width: 100%;
-      }
-      
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{% url 'home' %}">
-              <img src="{% static 'static/Goku.jpg' %}" id='navbar_main_jpeg'>
-              &nbspAleksander Jaworski
-            </a>
-            <!-- this part of code is here for a reason, do not touch it -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="https://github.com/JaworskiAleksander">
-                  <img src="/media/images/GitHub-Mark-32px.png" alt="" class='navbar_icons'>
-                  GitHub
-                </a>
-                <a class="nav-item nav-link" href="{% static 'static/CV.Jaworski_Aleksander.pdf' %}">
-                  <img src="/media/images/business.png" class="navbar_icons">
-                  Resumee
-                </a>
-                <a class="nav-item nav-link" href="{% url 'blog:allblogs' %}">
-                  <img src="/media/images/hands-and-gestures.png" class="navbar_icons">
-                  Blog
-                </a>
-                <a class="nav-item nav-link" href="{% url 'admin:index' %}">
-                  <img src="/media/images/admin_logo.png" alt="" class="navbar_icons">
-                  Admin
-                </a>
-              </div>
-            </div>
-        </nav>
-    </header>
-
-<main role="main">
-
-  <section class="jumbotron text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <img src="{% static 'static/Goku.jpg' %}" id='main_pic'>
-        </div>
-        <div class="col-10">
-          <h1>Welcome to my personal website</h1>
-          <p class="lead text-muted">
-            Converting 1,3,7-trimethylxanthine into SOLID code since Win 3.11. 
-          </p>
-          <p class="text-left" id="main-text">
-            With passion, grinding code and coffee using git, docker, VS Code and AeroPress to suit the needs, wishes and desires of my customers.
-            Two scoops of Django, one tbsp of coffee beans and a Bootstrap are what starts my day on high note.
-            Afternoons are for reading, overflowing stacks, and listening to my favorite rock band - RTFM.
-            Evenings are for code cleaning, refactoring and commiting to repo's.
-          </p>
-        </div>
-      </div>
-      <div class="row">        
-        <div class="col">
-          <div class="lead text-muted">
-            Would you like to enter the initial configuration dialog? [yes/no]:
-            <button onclick="window.alert('My contact info is in my Resumee, which you can find at the top right sidebar, and it\'s also clickable.');" 
-            class="btn btn-outline-dark mailbutton">yes</button>
-            <button onclick="window.alert('Would you be kind enough to give me a message on how to improve my skills? What is the the most important thing I should be working on right now?');"
-            class="btn btn-outline-dark">no</button>
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 align-items-center">
+            <img src="{% static 'static/MAIN.jpeg' %}" id='main_pic'>
+          </div>
+          <div class="col-md-9" style="text-transform: uppercase;">
+            <h1><strong>Jaworski Aleksander</strong></h1>
+            <h3>
+              Web Developer
+            </h3>
+            <h5>
+              <button class="btn btn-secondary">React.js</button>
+              <button class="btn btn-secondary">HTML5</button>
+              <button class="btn btn-secondary">CSS3</button>
+              <button class="btn btn-secondary">Bootstrap</button>
+            </h5>
+            <h5>
+              <button class="btn btn-secondary">Django 3.x</button>
+              <button class="btn btn-secondary">Python3</button>
+            </h5>
+            <h5>
+              <button class="btn btn-secondary">Postgres</button>
+              <button class="btn btn-secondary">docker</button>
+              <button class="btn btn-secondary">Kubernetes</button>
+              <button class="btn btn-secondary">git</button>
+              <button class="btn btn-secondary">VS Code</button>
+            </h5>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        {% for job in jobs.all %}
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top" width="100%" height="225" src="{{ job.image.url }}" alt="">
-            <div class="card-body">
-              <p class="card-text">{{ job.summary }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="{{ job.live_app_link }}">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
-                  </a>
-                  <a href="{{ job.code_source_link }}">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
-                  </a>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-flex flex-column align-items-left">
+            <button 
+              class="btn btn-secondary btn-navbar"
+              onclick="window.alert('My contact info is in my Resumee.');">
+              Email me
+            </button>
+            
+            <a href="{% static 'static/CV.Jaworski_Aleksander.pdf' %}">
+              <button class="btn btn-secondary btn-navbar">
+                Resumee
+              </button>
+            </a>
+
+            <a href="https://github.com/JaworskiAleksander">
+              <button class="btn btn-secondary btn-navbar">
+                github
+              </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/aleksander-jaworski-3874471aa/">
+              <button class="btn btn-secondary btn-navbar">
+                LinkedIn
+              </button>            
+            </a>
+            
+            <a href="{% url 'admin:index' %}"">
+              <button class="btn btn-warning btn-navbar">
+                AdminPage
+              </button>
+            </a>
+          </div>
+
+          {% for job in jobs.all %}
+          <div class="col-md-9">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" width="100%" height="225" src="{{ job.image.url }}" alt="">
+              <div class="card-body">
+                <p class="card-text">{{ job.summary }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{{ job.live_app_link }}">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
+                    </a>
+                    <a href="{{ job.code_source_link }}">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
-  </div>
 
-</main>
+  </main>
 
-<footer class="text-muted">
-  <div class="container text-center">
-    <p>&#x24B8;	Aleksander Jaworski {% now "Y" %}
-    </p>
-  </div>
-</footer>
-    <!-- Bootstrap JS, Popper.js and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</html>
+  <footer class="text-muted">
+    <div class="container text-center">
+      <p>&#x24B8;	Aleksander Jaworski {% now "Y" %}
+      </p>
+    </div>
+  </footer>
+      <!-- Bootstrap JS, Popper.js and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  </html>
