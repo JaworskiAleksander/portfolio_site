@@ -47,5 +47,15 @@
 }
 
 .my-flashcard{
-  border: 3px solid black;
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.flashcard-img{
+  height: 128px;
+  width: 128px;
 }
