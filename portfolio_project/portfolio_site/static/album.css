@@ -41,6 +41,14 @@
   max-width: 100%;
 }
 
+/* flashcard-grid-system */
+.flashcard-grid-system{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 /* flashcard formatting */
 .flashcard-description{
   color: red;
@@ -58,11 +66,4 @@
 .flashcard-img{
   height: 128px;
   width: 128px;
-}
-
-/* flashcard-grid-system */
-.flashcard-grid-system{
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
 }
