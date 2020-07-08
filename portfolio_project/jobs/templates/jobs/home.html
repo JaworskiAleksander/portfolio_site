@@ -106,8 +106,12 @@
                   <div class="flashcard-body">
                     <p class="flashcard-description">{{ job.summary }}</p>
                     <div class="flashcard-buttons">
-                      <button class="btn btn-outline-secondary flashcard-button">Live</button>
-                      <button class="btn btn-outline-secondary flashcard-button">Source</button>
+                      <a href="{{ job.live_app_link }}">
+                        <button class="btn btn-outline-secondary flashcard-button">Live</button>
+                      </a>
+                      <a href="{{ job.code_source_link }}">
+                        <button class="btn btn-outline-secondary flashcard-button">Source</button>
+                      </a>
                     </div>
                   </div>
                 </div>
