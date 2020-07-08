@@ -40,3 +40,12 @@
   max-height: 100%;
   max-width: 100%;
 }
+
+/* flashcard formatting */
+.flashcard-description{
+  color: red;
+}
+
+.my-flashcard{
+  border: 3px solid black;
+}

@@ -66,7 +66,7 @@
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 d-flex flex-column align-items-left">
+          <div class="col-md-3 d-flex flex-column align-items-left">
             <button 
               class="btn btn-secondary btn-navbar"
               onclick="window.alert('My contact info is in my Resumee.');">
@@ -98,19 +98,28 @@
             </a>
           </div>
 
-          <!-- <div class="col-md-9">
+          <div class="col-md-9">
             {% for job in jobs.all %}
-
+            <div class="my-flashcard">
+              <img class="flashcard-img" height="192" width="192" src="{{ job.image.url }}" alt="">
+              <div class="flashcard-body">
+                <p class="flashcard-description">{{ job.summary }}</p>
+                <div class="flashcard-buttons">
+                  <button class="btn btn-outline-secondary flashcard-button">Live</button>
+                  <button class="btn btn-outline-secondary flashcard-button">Source</button>
+                </div>
+              </div>
+            </div>
             {% endfor %}
-            buidl your own flashcard to display projects
+            <!-- buidl your own flashcard to display projects
               + project title/name/whatever
               + picture
               + job.summary
               + link to live version
-              + link to github code
-          </div> -->
+              + link to github code -->
+          </div>
 
-            {% for job in jobs.all %}
+            <!-- {% for job in jobs.all %}
             <div class="col-sm-3">
               <div class="card mb-3 shadow-sm w-20">
                 <img class="card-img-top" width="192" height="256" src="{{ job.image.url }}" alt="">
@@ -128,8 +137,7 @@
                 </div>
               </div>
             </div>
-            {% endfor %}
-        </div>
+            {% endfor %} -->
         </div>
       </div>
     </div>
