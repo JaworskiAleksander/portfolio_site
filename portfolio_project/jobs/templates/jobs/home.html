@@ -99,18 +99,20 @@
           </div>
 
           <div class="col-md-9">
-            {% for job in jobs.all %}
-            <div class="my-flashcard text-center">
-              <img class="flashcard-img" src="{{ job.image.url }}" alt="">
-              <div class="flashcard-body">
-                <p class="flashcard-description">{{ job.summary }}</p>
-                <div class="flashcard-buttons">
-                  <button class="btn btn-outline-secondary flashcard-button">Live</button>
-                  <button class="btn btn-outline-secondary flashcard-button">Source</button>
+            <div class="flashcard-grid-system">
+              {% for job in jobs.all %}
+                <div class="my-flashcard text-center">
+                  <img class="flashcard-img" src="{{ job.image.url }}" alt="">
+                  <div class="flashcard-body">
+                    <p class="flashcard-description">{{ job.summary }}</p>
+                    <div class="flashcard-buttons">
+                      <button class="btn btn-outline-secondary flashcard-button">Live</button>
+                      <button class="btn btn-outline-secondary flashcard-button">Source</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
             <!-- buidl your own flashcard to display projects
               + project title/name/whatever
               + picture

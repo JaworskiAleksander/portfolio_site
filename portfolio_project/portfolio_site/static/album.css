@@ -59,3 +59,11 @@
   height: 128px;
   width: 128px;
 }
+
+/* flashcard-grid-system */
+.flashcard-grid-system{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(aufo-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+}
