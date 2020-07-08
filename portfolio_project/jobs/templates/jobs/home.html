@@ -100,8 +100,8 @@
 
           <div class="col-md-9">
             {% for job in jobs.all %}
-            <div class="my-flashcard">
-              <img class="flashcard-img" height="192" width="192" src="{{ job.image.url }}" alt="">
+            <div class="my-flashcard text-center">
+              <img class="flashcard-img" src="{{ job.image.url }}" alt="">
               <div class="flashcard-body">
                 <p class="flashcard-description">{{ job.summary }}</p>
                 <div class="flashcard-buttons">
