@@ -60,6 +60,9 @@ Once logged in psql shell, type this
 ### Extra work
 + to merge all static files into one folder within a project, run this:
     + `python manage.py collectstatic`
+
++ Once you've updated and collected statics, restart service
+    + `sudo service gunicorn restart`
 + add url field to jobs model
     + store link to github source code
     + store link to live version, hosted at heroku or whathaveyou
